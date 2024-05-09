@@ -1,0 +1,182 @@
+{
+  "main": {
+    "id": "a515f2c5c8332b71",
+    "type": "split",
+    "children": [
+      {
+        "id": "c76785fb6820109a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8438e7a9a4fd4b79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b68cfb0d4c9976cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b86dc85be8954b6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8cdcbfed7017658",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "162c1bc1a82cb41a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "28403db099dc3c74",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "139954f29171cbdd",
+    "type": "split",
+    "children": [
+      {
+        "id": "1ac49c53b1c0ce85",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98c555285948b279",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ec147be0b044c5cf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cce5471151f2a4e7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "dd674ec1f3c63152",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "audio-recorder:Start/stop recording": false
+    }
+  },
+  "active": "8438e7a9a4fd4b79",
+  "lastOpenFiles": [
+    "Wiki.md",
+    "README.md",
+    "Untitled",
+    "08 Feb 2024.md",
+    "04 Jan 2024.md",
+    "Zomato/NSQ Service Side Indexing.md",
+    "Untitled 1.md",
+    "29 Jan 2024.md",
+    "Zomato/AS revamp.md",
+    "ks.md",
+    "debug.md",
+    "Self Reflection.md",
+    "Jaipur.md",
+    "Pasted image 20240109134621.png",
+    "09 Jan 2024.md",
+    "Zomato/Autosuggest.md",
+    "05 Jan 2024.md",
+    "Debug AS.md",
+    "Debug New flow.md",
+    "Zomato/Ongoing tasks.md",
+    "Zomato/Search Service.md",
+    "Zomato/Zomato Search.md",
+    "2024-01-04.md",
+    "SSH Agent.md",
+    "Zomato/Index.md",
+    "Zomato",
+    "Welcome.md",
+    "2023-12-29.md",
+    "Untitled.canvas"
+  ]
+}
