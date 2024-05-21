@@ -1,4 +1,4 @@
-# io_uring
+# io_uring - [[OS]]
 **io_uring** is a Linux kernel interface designed for efficient asynchronous I/O operations. It uses two circular buffers, the submission queue (SQ) and completion queue (CQ), to minimise system calls and improve performance. The zero-copy feature allows direct data transfer  between user space and the kernel, reducing overhead and latency. This makes `io_uring` especially beneficial for high-performance applications and storage systems, enhancing I/O throughput and reducing CPU utilisation compared to traditional methods.
 
 ## Zero Copy
