@@ -6,7 +6,7 @@ all:
 
 commit:
 	git add .
-	git commit -m "`date +'%Y-%m-%dT%H:%M:%S'`"
+	git commit -m "update `date +'%Y-%m-%dT%H:%M:%S'`"
 
 push:
 	git push origin main
