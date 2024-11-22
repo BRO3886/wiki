@@ -157,7 +157,80 @@ func sub(nums []int, s int, curr []int, res *[][]int) {
 }
 ```
 
-## Sum of a matrix - [Link]()
+## Sum of a matrix - [Link](https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/N)
+
+```go
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	var r, c int
+	fmt.Scanln(&r, &c)
+
+	a := make([][]int, r)
+	b := make([][]int, r)
+
+	for i := 0; i < r; i++ {
+		a[i] = DefaultSlice(-101, c)
+		for j := range a[i] {
+			if _, err := fmt.Scan(&a[i][j]); err != nil {
+				panic(err)
+			}
+		}
+	}
+
+	for i := 0; i < r; i++ {
+		b[i] = DefaultSlice(-101, c)
+		for j := range b[i] {
+			if _, err := fmt.Scan(&b[i][j]); err != nil {
+				panic(err)
+			}
+		}
+	}
+
+	ans := make([][]int, r)
+	for i := 0; i < r; i++ {
+		ans[i] = DefaultSlice(-101, c)
+	}
+	doSum(a, b, &ans, 0, 0, r, c)
+	sb := strings.Builder{}
+	for i := 0; i < r; i++ {
+		sb.Reset()
+		for j := 0; j < c; j++ {
+			sb.WriteString(fmt.Sprintf("%d ", ans[i][j]))
+		}
+		fmt.Println(strings.TrimSpace(sb.String()))
+	}
+}
+
+func doSum(a, b [][]int, ans *[][]int, i, j, r, c int) {
+	if i >= r || j >= c {
+		return
+	}
+
+	temp := *ans
+	if temp[i][j] != -101 {
+		return
+	}
+	temp[i][j] = a[i][j] + b[i][j]
+	doSum(a, b, ans, i+1, j, r, c)
+	doSum(a, b, ans, i, j+1, r, c)
+}
+
+func DefaultSlice[T any](val T, size int) []T {
+	arr := make([]T, size)
+	for i := range arr {
+		arr[i] = val
+	}
+	return arr
+}
+```
+
+## Knapsack - [Link](https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/U)
 
 ```go
 
