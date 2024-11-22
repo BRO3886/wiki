@@ -123,7 +123,7 @@ func subsets(nums []int) [][]int {
         copy(temp,row)
         final = append(final, row)
         temp = append(temp, last)
-        final = append(final, temp)        
+        final = append(final, temp)
     }
     final = append(final, []int{last})
     return final
@@ -151,7 +151,7 @@ func sub(nums []int, s int, curr []int, res *[][]int) {
        if i != s && nums[i] == nums[i-1] {
            continue
        }
-       
+
         sub(nums, i+1, append(curr, nums[i]), res)
     }
 }
@@ -233,5 +233,33 @@ func DefaultSlice[T any](val T, size int) []T {
 ## Knapsack - [Link](https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/U)
 
 ```go
+package main
 
+import "fmt"
+
+func main() {
+	var n, w int
+	fmt.Scanln(&n, &w)
+
+	weights := make([]int, n)
+	profits := make([]int, n)
+	for i := 0; i < n; i++ {
+		fmt.Scan(&weights[i], &profits[i])
+	}
+
+	fmt.Println(knapsack(weights, profits, 0, w))
+}
+
+func knapsack(weights, profits []int, i, w int) int {
+	if i >= len(weights) || w <= 0 {
+		return 0
+	}
+
+	// skip cond
+	if weights[i] > w {
+		return knapsack(weights, profits, i+1, w)
+	}
+
+	return max(knapsack(weights, profits, i+1, w), profits[i]+knapsack(weights, profits, i+1, w-weights[i]))
+}
 ```
