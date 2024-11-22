@@ -233,23 +233,6 @@ func DefaultSlice[T any](val T, size int) []T {
 ## Knapsack - [Link](https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/U)
 
 ```go
-package main
-
-import "fmt"
-
-func main() {
-	var n, w int
-	fmt.Scanln(&n, &w)
-
-	weights := make([]int, n)
-	profits := make([]int, n)
-	for i := 0; i < n; i++ {
-		fmt.Scan(&weights[i], &profits[i])
-	}
-
-	fmt.Println(knapsack(weights, profits, 0, w))
-}
-
 func knapsack(weights, profits []int, i, w int) int {
 	if i >= len(weights) || w <= 0 {
 		return 0
@@ -261,5 +244,27 @@ func knapsack(weights, profits []int, i, w int) int {
 	}
 
 	return max(knapsack(weights, profits, i+1, w), profits[i]+knapsack(weights, profits, i+1, w-weights[i]))
+}
+```
+
+## Maximum Path Sum - [Link](https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/X)
+
+```go
+func maxPathSum(arr [][]int, i, j, r, c int) int {
+	if i == r-1 && j == c-1 {
+		return arr[i][j]
+	}
+
+	// can only go down
+	if j == c-1 {
+		return arr[i][j] + maxPathSum(arr, i+1, j, r, c)
+	}
+
+	// can only go right
+	if i == r-1 {
+		return arr[i][j] + maxPathSum(arr, i, j+1, r, c)
+	}
+
+	return arr[i][j] + max(maxPathSum(arr, i, j+1, r, c), maxPathSum(arr, i+1, j, r, c))
 }
 ```
