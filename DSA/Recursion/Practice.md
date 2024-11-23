@@ -268,3 +268,99 @@ func maxPathSum(arr [][]int, i, j, r, c int) int {
 	return arr[i][j] + max(maxPathSum(arr, i, j+1, r, c), maxPathSum(arr, i+1, j, r, c))
 }
 ```
+
+## Creating Expression 1 - [Link](https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/V)
+
+```go
+func createExpression(arr []int, i, ans, x int) bool {
+	if i == len(arr) {
+		return ans == x
+	}
+
+	return createExpression(arr, i+1, ans+arr[i], x) || createExpression(arr, i+1, ans-arr[i], x)
+}
+```
+
+## Creating Strings - [Link](https://cses.fi/problemset/task/1622)
+
+```go
+func main() {
+	var input string
+	fmt.Scanln(&input)
+
+	runes := []rune(input)
+	sort.SliceStable(runes, func(i, j int) bool {
+		return runes[i] < runes[j]
+	})
+
+	input = string(runes)
+
+	fm := map[rune]int{}
+
+	n := 0
+	for _, char := range input {
+		n++
+		fm[char]++
+	}
+
+	ans := make([]string, 0, n)
+	f(0, n, fm, "", &ans)
+	fmt.Println(len(ans))
+	for _, item := range ans {
+		fmt.Println(item)
+	}
+}
+
+func f(i, n int, fm map[rune]int, curr string, ans *[]string) {
+	if i == n {
+		*ans = append(*ans, curr)
+		return
+	}
+
+	for j := 97; j < 124; j++ {
+		if fm[rune(j)] > 0 {
+			fm[rune(j)]--
+			f(i+1, n, fm, curr+string(rune(j)), ans)
+			fm[rune(j)]++
+		}
+	}
+}
+```
+
+## 131. Palindrome Partitioning - [Link](https://leetcode.com/problems/palindrome-partitioning/description/)
+
+```go
+func partition(s string) [][]string {
+    ans := make([][]string, 0)
+	f(s, 0, []string{}, &ans)
+	return ans
+}
+
+
+func f(s string, i int, curr []string, ans *[][]string) {
+	fmt.Println(i, curr)
+	if i >= len(s) {
+		*ans = append(*ans, curr)
+		return
+	}
+
+	for j := i; j <= len(s)-1; j++ {
+		if isPalindrome(s[i : j+1]) {
+			temp := append([]string{}, curr...)
+			f(s, j+1, append(temp, s[i:j+1]), ans)
+		}
+	}
+}
+
+func isPalindrome(s string) bool {
+    left, right := 0, len(s)-1
+	for left < right {
+		if s[left] != s[right] {
+			return false
+		}
+		left++
+		right--
+	}
+	return true
+}
+```
