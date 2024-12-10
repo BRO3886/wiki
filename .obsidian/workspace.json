@@ -11,10 +11,14 @@
             "id": "96da5749e27b89f4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "DSA/Binary Search/README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "README"
             }
           }
         ]
@@ -160,7 +164,13 @@
   },
   "active": "96da5749e27b89f4",
   "lastOpenFiles": [
+    "DSA/Binary Search/array division/main.py",
+    "DSA/Binary Search/array division/README.md",
+    "DSA/Binary Search/array division/main.go",
+    "DSA/Binary Search/array division",
     "DSA/Binary Search/fair workload/README.md",
+    "DSA/Backtracking/README.md",
+    "DSA/Backtracking/Practice.md",
     "DSA/Binary Search/fair workload/main.go",
     "DSA/Binary Search/fair workload",
     "DSA/Binary Search/README.md",
@@ -179,8 +189,6 @@
     "README.md",
     "DSA/Recursion/Questions.md",
     "DSA/Recursion/Recursion.md",
-    "TLE/Recursion/main.go",
-    "TLE/Recursion/abc.go",
     "TLE/Recursion/README.md",
     "TLE/Recursion/Recursion.md",
     "Welcome.md"
