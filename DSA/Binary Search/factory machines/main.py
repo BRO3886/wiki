@@ -6,7 +6,7 @@ def possible(seconds: int, max_products: int, machine_times: List[int]) -> bool:
         req = seconds
         if mt > req:
             continue
-            max_products -= 1
+        max_products -= req // mt
     return max_products <= 0
 
 
