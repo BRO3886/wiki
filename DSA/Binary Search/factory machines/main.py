@@ -20,7 +20,6 @@ if __name__ == "__main__":
     ctr = 1
     while low <= high:
         mid = (low + high) // 2
-        print(low, high, mid, ctr)
         if possible(mid, t, mt):
             ans = min(ans, mid)
             high = mid - 1
