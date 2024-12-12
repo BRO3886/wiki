@@ -1,5 +1,6 @@
 from typing import List
 
+# question link - https://cses.fi/problemset/task/1620
 
 def possible(seconds: int, max_products: int, machine_times: List[int]) -> bool:
     for mt in machine_times:
