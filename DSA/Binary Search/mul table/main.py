@@ -1,6 +1,5 @@
-
-
 if __name__ == "__main__":
     n = int(input())
-    
-    poss    
+
+    for i in range(n):
+        curr = i + 1
