@@ -1,9 +1,11 @@
+# question link - https://cses.fi/problemset/task/2422/
+
 def possible(mid, n):
     count = 0
     for i in range(1, n + 1):
-        for j in range(1, n + 1):
-            if j * i <= mid:
-                count += 1
+        # checking min here since for bigger mids
+        # we only need to check upto n elements (num of rows)
+        count += min(mid // i, n)
 
     return count > (n * n - 1) / 2
 
