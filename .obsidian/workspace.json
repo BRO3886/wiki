@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0ef5e296eaf1e4ca",
+        "id": "5e810eefcccae434",
         "type": "tabs",
         "children": [
           {
-            "id": "96da5749e27b89f4",
+            "id": "4cd1150999aec2fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Binary Search/README.md",
+                "file": "belief/README.md",
                 "mode": "source",
                 "source": false
               },
@@ -162,8 +162,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "96da5749e27b89f4",
+  "active": "4cd1150999aec2fd",
   "lastOpenFiles": [
+    "belief/README.md",
+    "belief",
     "DSA/Binary Search/prob/main.py",
     "DSA/Binary Search/prob",
     "DSA/Binary Search/ps",
@@ -171,21 +173,19 @@
     "DSA/Binary Search/lc_1482/main.py",
     "DSA/Binary Search/lc_1482",
     "DSA/Binary Search/lc_1382",
-    "DSA/Binary Search/mul table/main.py",
-    "DSA/Binary Search/mul table",
-    "DSA/Binary Search/factory machines/main.py",
-    "DSA/Binary Search/factory machines",
-    "DSA/Binary Search/array division/README.md",
-    "DSA/Binary Search/fair workload/README.md",
-    "DSA/Backtracking/README.md",
-    "DSA/Backtracking/Practice.md",
-    "DSA/Binary Search/README.md",
+    "dsa/Binary Search/mul table/main.py",
+    "dsa/Binary Search/mul table",
+    "dsa/Binary Search/array division/README.md",
+    "dsa/Binary Search/fair workload/README.md",
+    "dsa/Backtracking/README.md",
+    "dsa/Backtracking/Practice.md",
+    "dsa/Binary Search/README.md",
     "static/images/bs_tc.png",
     "static/bs_tc.png",
     "static/Pasted image 20241209124143.png",
     "Pasted image 20241209124143.png",
-    "DSA/Recursion/Practice.md",
-    "DSA/Recursion/README.md",
+    "dsa/Recursion/Practice.md",
+    "dsa/Recursion/README.md",
     "README.md",
     "DSA/Recursion/Questions.md",
     "DSA/Recursion/Recursion.md",
