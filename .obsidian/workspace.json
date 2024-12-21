@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "belief/README.md",
+                "file": "dsa/sliding window/README.md",
                 "mode": "source",
                 "source": false
               },
@@ -164,17 +164,18 @@
   },
   "active": "4cd1150999aec2fd",
   "lastOpenFiles": [
+    "dsa/sliding window/4_first_negative.py",
+    "dsa/sliding window/3_smallest_element_subarray.py",
+    "dsa/sliding window/2_max_sum_distict_ele.py",
+    "dsa/sliding window/2_max sum distinct elements.py",
+    "dsa/sliding window/1_subarray_sum.py",
+    "dsa/sliding window/smallest_element_subarray.py",
     "belief/README.md",
     "belief",
     "DSA/Binary Search/prob/main.py",
     "DSA/Binary Search/prob",
     "DSA/Binary Search/ps",
     "DSA/Binary Search/lc_1482/main.go",
-    "DSA/Binary Search/lc_1482/main.py",
-    "DSA/Binary Search/lc_1482",
-    "DSA/Binary Search/lc_1382",
-    "dsa/Binary Search/mul table/main.py",
-    "dsa/Binary Search/mul table",
     "dsa/Binary Search/array division/README.md",
     "dsa/Binary Search/fair workload/README.md",
     "dsa/Backtracking/README.md",
