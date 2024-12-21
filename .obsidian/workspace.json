@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5e810eefcccae434",
+        "id": "374f3c25b967b59d",
         "type": "tabs",
         "children": [
           {
-            "id": "4cd1150999aec2fd",
+            "id": "dd718bb4e81b67cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dsa/sliding window/README.md",
+                "file": "belief/README.md",
                 "mode": "source",
                 "source": false
               },
@@ -162,20 +162,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4cd1150999aec2fd",
+  "active": "dd718bb4e81b67cb",
   "lastOpenFiles": [
+    "belief/README.md",
+    "dsa/sliding window/README.md",
     "dsa/sliding window/4_first_negative.py",
     "dsa/sliding window/3_smallest_element_subarray.py",
     "dsa/sliding window/2_max_sum_distict_ele.py",
     "dsa/sliding window/2_max sum distinct elements.py",
     "dsa/sliding window/1_subarray_sum.py",
     "dsa/sliding window/smallest_element_subarray.py",
-    "belief/README.md",
     "belief",
     "DSA/Binary Search/prob/main.py",
     "DSA/Binary Search/prob",
     "DSA/Binary Search/ps",
-    "DSA/Binary Search/lc_1482/main.go",
     "dsa/Binary Search/array division/README.md",
     "dsa/Binary Search/fair workload/README.md",
     "dsa/Backtracking/README.md",
