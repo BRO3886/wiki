@@ -1,4 +1,4 @@
-# Two Pointers and Good Segments Technique: A Comprehensive Guide
+# Two Pointers
 
 ## Introduction to Two Pointers
 
