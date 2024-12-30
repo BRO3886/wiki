@@ -669,95 +669,74 @@ def countSubarrays(arr: List[int], k: int) -> int:
 
 ### Problem 6: Count Subarrays with Sum ≥ K
 
-Now let's flip the condition: count subarrays with sum greater than or equal to K. This is a Type 2 problem.
+Now let's understand a different type of counting problem. Given an array of positive numbers and a value K, count all subarrays whose sum is greater than or equal to K.
 
-#### Understanding the Difference
+#### Type 2 Property
+This is a Type 2 problem: if a segment has sum ≥ K, all segments containing this segment must also have sum ≥ K. This happens because all elements are positive, so adding more elements can only increase the sum.
 
-The key difference from Problem 5 is how we count when we find a valid window. When a window [l...r] has sum ≥ K, all windows containing this window will also have sum ≥ K.
-
-Let's look at an example:
-
+Let's understand how this property helps us count valid subarrays:
 ```
-Array = [1, 4, 2]
+Array = [2, 1, 3, 1]
 K = 4
 
-When we find [4] with sum = 4:
-- It contributes [4]
-- Future elements will create more valid arrays: [4,2]
-- Previous elements also create valid arrays: [1,4]
-- And combinations of both: [1,4,2]
+If we find [1,3] has sum = 4 ≥ K:
+- This segment is valid
+- Adding elements before: [2,1,3] must be valid
+- Adding elements after: [1,3,1] must be valid
+- Adding both: [2,1,3,1] must be valid
 ```
 
-#### Key Insight for Counting
-
-When we find a valid window ending at position r, how many total subarrays will it contribute to? For each valid left pointer position l, we'll get valid subarrays starting anywhere from 0 to l and ending at r.
-
-```
-Array = [1, 4, 2]
-K = 4
-
-At r = 1 (element 4):
-  Valid window: [4]
-  This means [4] and [1,4] are valid
-  Count += 2 (number of positions before r + 1)
-
-At r = 2 (element 2):
-  Valid windows: [4,2]
-  This means [4,2] and [1,4,2] are valid
-  Count += 2
-```
-
-#### Solution Implementation
-
+#### Solution
 ```python
 def countSubarraysGreaterEqual(arr: List[int], k: int) -> int:
     count = 0
     left = 0
     current_sum = 0
-
+    
     for right in range(len(arr)):
         current_sum += arr[right]
-
+        
         while left <= right and current_sum >= k:
-            count += len(arr) - right  # Key difference in counting
+            count += len(arr) - right
             current_sum -= arr[left]
             left += 1
-
+    
     return count
 ```
 
-### Comparing the Two Problems
+Let's trace how we discover and count every valid window:
+```
+Array = [2, 1, 3, 1]
+K = 4
 
-Both problems involve counting subarrays, but they differ in crucial ways:
+At r = 2 (element 3):
+1. Window [2,1,3] has sum = 6 ≥ K
+   We add len(arr)-r = 4-2 = 2 to count:
+   - [2,1,3]
+   - [2,1,3,1]  (extension to the right)
 
-1. Counting Strategy:
+2. After removing 2, window [1,3] has sum = 4 ≥ K
+   We add len(arr)-r = 4-2 = 2 again to count:
+   - [1,3]
+   - [1,3,1]   (extension to the right)
 
-   - Sum ≤ K: When we find a valid window, we count subarrays ending at the current position
-   - Sum ≥ K: When we find a valid window, we count all possible extensions of this window
+3. After removing 1, window [3] has sum = 3 < K
+   Stop shrinking
 
-2. Window Management:
+At r = 3 (element 1):
+1. Window [3,1] has sum = 4 ≥ K
+   We add len(arr)-r = 4-3 = 1 to count:
+   - [3,1]     (no more extensions possible)
 
-   - Sum ≤ K: We maintain a maximal valid window and count based on its size
-   - Sum ≥ K: We find minimal valid windows and count all ways to extend them
+Total count = 5
+```
 
-3. Time Complexity:
-   Both solutions achieve O(n) because:
-   - Each element is added once
-   - Each element is removed at most once
-   - Counting operations are constant time
+#### Why len(arr) - r Works
+When we find a valid window ending at position r, we'll discover several valid windows through the shrinking process. The value len(arr) - r tells us how many such windows we'll find as we shrink our current window.
 
-### Key Lessons
+In our example at r = 2:
+1. First find [2,1,3], and we know [2,1,3,1] will also be valid
+2. Then find [1,3], and we know [1,3,1] will also be valid
+3. Each discovery contributes len(arr) - r valid windows
 
-1. When counting subarrays, we need to:
-
-   - Identify what makes a subarray valid
-   - Determine how many valid subarrays each window contributes
-   - Count efficiently without double-counting
-
-2. The type of problem (Type 1 or Type 2) determines:
-
-   - How we manage our window
-   - How we count valid subarrays
-   - Which subarrays a valid window guarantees
-
-3. Despite different counting strategies, both problems maintain linear time complexity through careful window management.
+Each valid window we find represents a minimal valid window (removing any element from the left would make it invalid) that can be extended to the right in different ways. The algorithm systematically discovers all such windows through the shrinking process.
