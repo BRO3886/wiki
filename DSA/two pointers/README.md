@@ -672,9 +672,11 @@ def countSubarrays(arr: List[int], k: int) -> int:
 Now let's understand a different type of counting problem. Given an array of positive numbers and a value K, count all subarrays whose sum is greater than or equal to K.
 
 #### Type 2 Property
+
 This is a Type 2 problem: if a segment has sum ≥ K, all segments containing this segment must also have sum ≥ K. This happens because all elements are positive, so adding more elements can only increase the sum.
 
 Let's understand how this property helps us count valid subarrays:
+
 ```
 Array = [2, 1, 3, 1]
 K = 4
@@ -687,24 +689,26 @@ If we find [1,3] has sum = 4 ≥ K:
 ```
 
 #### Solution
+
 ```python
 def countSubarraysGreaterEqual(arr: List[int], k: int) -> int:
     count = 0
     left = 0
     current_sum = 0
-    
+
     for right in range(len(arr)):
         current_sum += arr[right]
-        
+
         while left <= right and current_sum >= k:
             count += len(arr) - right
             current_sum -= arr[left]
             left += 1
-    
+
     return count
 ```
 
 Let's trace how we discover and count every valid window:
+
 ```
 Array = [2, 1, 3, 1]
 K = 4
@@ -732,9 +736,11 @@ Total count = 5
 ```
 
 #### Why len(arr) - r Works
+
 When we find a valid window ending at position r, we'll discover several valid windows through the shrinking process. The value len(arr) - r tells us how many such windows we'll find as we shrink our current window.
 
 In our example at r = 2:
+
 1. First find [2,1,3], and we know [2,1,3,1] will also be valid
 2. Then find [1,3], and we know [1,3,1] will also be valid
 3. Each discovery contributes len(arr) - r valid windows
