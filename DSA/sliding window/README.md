@@ -4,7 +4,11 @@ The main idea is to reduce the time complexity involved in iterating through the
 
 The intuition for identifying sliding window problems is mostly around the phrase - subarrays.
 
-Sliding window problems can benefit from queue, deque optimizations.
+You should consider using sliding window when you notice these patterns in a problem:
+
+- The problem involves sequences (arrays, strings) where you need to find or calculate something among all contiguous subarrays or substrings
+- The problem asks for minimum, maximum, longest, shortest, or a specific size
+- The problem involves some kind of constraint that must be maintained as you process elements
 
 ## Practice Problems
 

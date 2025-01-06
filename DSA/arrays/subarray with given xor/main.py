@@ -5,11 +5,14 @@ TC: O(n)
 
 from typing import List
 
+"""
+Key idea: We use prefix XOR property to find subarrays. If Y is current prefix XOR till i,
+for any subarray ending at i to have XOR=B, we need prefix XOR X where Y^X=B
+So X=Y^B. Count all previous prefix XORs that equal Y^B.
+"""
+
 
 class Solution:
-    # @param A : list of integers
-    # @param B : integer
-    # @return an integer
     def solve(self, A: List[int], B: int) -> int:
         prev = 0
         m = {0: 1}
