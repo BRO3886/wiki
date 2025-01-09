@@ -1,14 +1,6 @@
 
-# Intro 
+When approaching a system design interview, you’ll typically be asked to design a small part of a larger system—often a single feature or component. The key is to start by breaking down the problem statement. Take the time to scope out the problem with the interviewer, clarifying the functionality and discussing the high-level design before diving into details.
 
-- Typically you will be asked to design a small part of the system - maybe a single feature.
-- Break down the problem statement - scope out the problem with interviewer
-	- clarify functionality
-	- high level design
-- functional vs non functional requirements
-	- you cannot like a tweet multiple times (functional)
-	- scalability is non functional - what if you have 100M DAU
-	- performance is non functional - eg. low latency 
-	- availability is non functional 
-- dont jump straight into the design and start solving the problem
-- 
+It’s important to distinguish between **functional** and **non-functional requirements**. For example, a functional requirement might be a rule like _“a user cannot like a tweet more than once.”_ On the other hand, non-functional requirements focus on system qualities, such as _scalability_ (e.g., how the system handles 100 million daily active users), _performance_ (e.g., ensuring low latency for user actions), and _availability_ (e.g., guaranteeing the system is up and running 99.9% of the time).
+
+A common mistake is jumping straight into the design without fully understanding the problem. Always take a step back, clarify the requirements, and think through the high-level approach before diving into the solution.
