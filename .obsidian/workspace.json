@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "system design/Approaching System Design Interview.md",
+                "file": "system design/Design Rate Limiter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Approaching System Design Interview"
+              "title": "Design Rate Limiter"
             }
           },
           {
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "system design/Approaching System Design Interview.md",
+                "file": "system design/Design Rate Limiter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Approaching System Design Interview"
+              "title": "Backlinks for Design Rate Limiter"
             }
           },
           {
@@ -177,8 +177,9 @@
   },
   "active": "dd718bb4e81b67cb",
   "lastOpenFiles": [
-    "system design/README.md",
     "system design/Approaching System Design Interview.md",
+    "system design/Design Rate Limiter.md",
+    "system design/README.md",
     "system design/Kafka Architecture Diagram.md",
     "system design/Design",
     "system design/Kafka.md",
