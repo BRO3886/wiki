@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "system design/Kafka Architecture Diagram.md",
+                "file": "system design/Approaching System Design Interview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Kafka Architecture Diagram"
+              "title": "Approaching System Design Interview"
             }
           },
           {
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "system design/Kafka Architecture Diagram.md",
+                "file": "system design/Approaching System Design Interview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Kafka Architecture Diagram"
+              "title": "Backlinks for Approaching System Design Interview"
             }
           },
           {
@@ -177,12 +177,14 @@
   },
   "active": "dd718bb4e81b67cb",
   "lastOpenFiles": [
-    "system design/Kafka.md",
+    "system design/README.md",
+    "system design/Approaching System Design Interview.md",
     "system design/Kafka Architecture Diagram.md",
+    "system design/Design",
+    "system design/Kafka.md",
     "system design/Redis.md",
     "static/images/Pasted image 20250108160046.png",
     "Redis persistence.md",
-    "system design/README.md",
     "dsa/two pointers/README.md",
     "system design",
     "dsa/two pointers/num of subarrays with sum geq k/main.py",
@@ -193,7 +195,6 @@
     "dsa/two pointers/longest subarray with sum leq k/main.py",
     "dsa/two pointers/longest subarray with sum leq k",
     "dsa/two pointers/longest subarray with distinct elements and sum leq k/main.py",
-    "dsa/two pointers/longest subarray with distinct elements and sum leq k",
     "dsa/sliding window/README.md",
     "dsa/two pointers/Untitled.md",
     "belief/README.md",
