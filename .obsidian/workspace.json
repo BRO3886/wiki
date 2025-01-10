@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "system design/Design Rate Limiter.md",
+                "file": "interviews/DSA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Design Rate Limiter"
+              "title": "DSA"
             }
           },
           {
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "system design/Design Rate Limiter.md",
+                "file": "interviews/DSA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Design Rate Limiter"
+              "title": "Backlinks for DSA"
             }
           },
           {
@@ -177,10 +177,14 @@
   },
   "active": "dd718bb4e81b67cb",
   "lastOpenFiles": [
+    "interviews/System Design.md",
+    "interviews/DSA.md",
+    "static/images/Pasted image 20250110162212.png",
+    "Graphs.md",
     "system design/Approaching System Design Interview.md",
+    "system design/Kafka Architecture Diagram.md",
     "system design/Design Rate Limiter.md",
     "system design/README.md",
-    "system design/Kafka Architecture Diagram.md",
     "system design/Design",
     "system design/Kafka.md",
     "system design/Redis.md",
@@ -214,10 +218,6 @@
     "dsa/Recursion/Practice.md",
     "dsa/Recursion/README.md",
     "README.md",
-    "DSA/Recursion/Questions.md",
-    "DSA/Recursion/Recursion.md",
-    "TLE/Recursion/README.md",
-    "TLE/Recursion/Recursion.md",
-    "Welcome.md"
+    "DSA/Recursion/Questions.md"
   ]
 }
