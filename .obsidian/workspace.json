@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "interviews/DSA.md",
+                "file": "interviews/System Design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DSA"
+              "title": "System Design"
             }
           },
           {
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "interviews/DSA.md",
+                "file": "interviews/System Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for DSA"
+              "title": "Backlinks for System Design"
             }
           },
           {
@@ -177,8 +177,19 @@
   },
   "active": "dd718bb4e81b67cb",
   "lastOpenFiles": [
-    "interviews/System Design.md",
+    "dsa/binary search/balanced stone heaps/main.py",
+    "dsa/binary search/balanced stone heaps",
+    "dsa/binary search/heap",
+    "pages/contents.md",
+    "pages",
+    "journals",
+    "logseq/custom.css",
+    "logseq/config.edn",
+    "logseq",
+    "dsa/sliding window/sages birthday/main.py",
+    "dsa/sliding window/sages birthday",
     "interviews/DSA.md",
+    "interviews/System Design.md",
     "static/images/Pasted image 20250110162212.png",
     "Graphs.md",
     "system design/Approaching System Design Interview.md",
@@ -191,15 +202,6 @@
     "static/images/Pasted image 20250108160046.png",
     "Redis persistence.md",
     "dsa/two pointers/README.md",
-    "system design",
-    "dsa/two pointers/num of subarrays with sum geq k/main.py",
-    "dsa/two pointers/num of subarrays with sum geq k",
-    "dsa/two pointers/num of subarrays with sum leq k/main.py",
-    "dsa/two pointers/num of subarrays with sum leq k",
-    "dsa/two pointers/shortest subarray with sum geq k/main.py",
-    "dsa/two pointers/longest subarray with sum leq k/main.py",
-    "dsa/two pointers/longest subarray with sum leq k",
-    "dsa/two pointers/longest subarray with distinct elements and sum leq k/main.py",
     "dsa/sliding window/README.md",
     "dsa/two pointers/Untitled.md",
     "belief/README.md",
@@ -217,7 +219,6 @@
     "Pasted image 20241209124143.png",
     "dsa/Recursion/Practice.md",
     "dsa/Recursion/README.md",
-    "README.md",
-    "DSA/Recursion/Questions.md"
+    "README.md"
   ]
 }
