@@ -177,6 +177,13 @@
   },
   "active": "dd718bb4e81b67cb",
   "lastOpenFiles": [
+    "self care/Skin and Scalp.md",
+    "self care/condition_tracker.csv",
+    "self care/main.go",
+    "self care/tracker.py",
+    "self care/Untitled.md",
+    "interviews/System Design.md",
+    "self care",
     "dsa/binary search/balanced stone heaps/main.py",
     "dsa/binary search/balanced stone heaps",
     "dsa/binary search/heap",
@@ -184,19 +191,13 @@
     "pages",
     "journals",
     "logseq/custom.css",
-    "logseq/config.edn",
-    "logseq",
-    "dsa/sliding window/sages birthday/main.py",
-    "dsa/sliding window/sages birthday",
     "interviews/DSA.md",
-    "interviews/System Design.md",
     "static/images/Pasted image 20250110162212.png",
     "Graphs.md",
     "system design/Approaching System Design Interview.md",
     "system design/Kafka Architecture Diagram.md",
     "system design/Design Rate Limiter.md",
     "system design/README.md",
-    "system design/Design",
     "system design/Kafka.md",
     "system design/Redis.md",
     "static/images/Pasted image 20250108160046.png",
@@ -217,8 +218,6 @@
     "static/bs_tc.png",
     "static/Pasted image 20241209124143.png",
     "Pasted image 20241209124143.png",
-    "dsa/Recursion/Practice.md",
-    "dsa/Recursion/README.md",
-    "README.md"
+    "dsa/Recursion/Practice.md"
   ]
 }
