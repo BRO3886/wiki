@@ -1,5 +1,6 @@
 {
   "theme": "system",
   "accentColor": "",
-  "cssTheme": "Atom"
+  "cssTheme": "Atom",
+  "monospaceFontFamily": "Geist Mono"
 }

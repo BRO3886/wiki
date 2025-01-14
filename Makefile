@@ -10,3 +10,5 @@ commit:
 
 push:
 	git push origin main
+
+.DEFAULT_GOAL := all
