@@ -1,6 +1,8 @@
 ## What is concurrency
 
-Concurrency is the ability to handle multiple tasks at the same time. In golang it is handled through:
+Concurrency is the ability to handle multiple tasks at the same time by switching between them. Tasks can start, run and complete in 
+
+In golang it is handled through:
 - Goroutines (lightweight threads)
 - Channels (communication between goroutines)
 - Synchronization primitives (mutexes, wait groups)
