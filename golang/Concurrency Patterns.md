@@ -24,6 +24,8 @@ Concurrency in golang is handled through:
 
 ### Goroutines
 
+A goroutine is a lightweight, user-space thread managed by the Go runtime.
+
 ```go
 func main() {
     // Start a goroutine
@@ -38,9 +40,7 @@ func main() {
 
 #### Goroutines vs Threads
 
-A goroutine is a lightweight, user-space thread managed by the Go runtime, while an OS thread is a kernel-space thread managed by the operating system. 
-
-The key differences are that goroutines are much smaller (starting at 2KB vs 1-2MB for threads) and are scheduled by Go's runtime scheduler rather than the OS scheduler, making them much cheaper to create and switch between compared to threads. Threads typically share memory and use locks while goroutines can also use channels for communication.
+A thread is managed by the OS (kernel level) while a goro The key differences are that goroutines are much smaller (starting at 2KB vs 1-2MB for threads) and are scheduled by Go's runtime scheduler rather than the OS scheduler, making them much cheaper to create and switch between compared to threads. Threads typically share memory and use locks while goroutines can also use channels for communication.
 
 #### Goroutine Leaks
 
