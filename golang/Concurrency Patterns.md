@@ -94,3 +94,4 @@ go func() {
 
 ### Channels
 
+A channel is a communication mechanism that allows goroutines to share data with each other "safely". One can think of it as a pipe through which we send data.
