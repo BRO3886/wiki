@@ -36,5 +36,35 @@ func main() {
 }
 ```
 
+
+
 ### Goroutine Leaks
+
+A goroutine leak occurs when you create a goroutine that cannot exit and continues to consume resources indefinitely. This is similar to a memory leak, but instead of memory, you're leaking goroutines.
+
+```go
+// Bad - Leaky goroutine
+func leak() {
+    ch := make(chan int)
+    go func() {
+        for {
+            ch <- 42  // Will block forever
+        }
+    }()
+}
+
+// Good - With cancellation
+func noLeak(ctx context.Context) {
+    ch := make(chan int)
+    go func() {
+        for {
+            select {
+            case <-ctx.Done():
+                return
+            case ch <- 42:
+            }
+        }
+    }()
+}
+```
 
