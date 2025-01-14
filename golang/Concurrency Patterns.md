@@ -10,7 +10,7 @@ Here, we switch between the tasks, but only do one at a time.
 
 ### Difference between concurrency and parallelism
 
-With parallelism, one is actually performing multiple tasks simultaneously. Building on the kitchen exa
+With parallelism, one is actually performing multiple tasks simultaneously. Building on the kitchen example, you could think of parallelism to be a restaurant kitchen with multiple chefs. One chef is chopping vegetables, one is cooking, one is finishing the dish
 
 In golang it is handled through:
 - Goroutines (lightweight threads)
