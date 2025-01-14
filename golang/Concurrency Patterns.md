@@ -72,3 +72,6 @@ func noLeak(ctx context.Context) {
 }
 ```
 
+### Race Conditions
+
+A race condition occurs when multiple goroutines are writing to the same resource - similar to what happens with multiple threads. To prevent race conditions, we 
