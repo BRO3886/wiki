@@ -94,4 +94,37 @@ go func() {
 
 ### Channels
 
-A channel is a communication mechanism that allows goroutines to share data with each other "safely". One can think of it as a pipe through which we send data.
+A channel is a communication mechanism that allows goroutines to share data with each other "safely". One can think of it as a pipe through which we send and receive data between goroutines.
+
+```go
+// Create a channel
+ch := make(chan int)
+
+// Send data through channel
+go func() {
+    ch <- 42  // Send value to channel
+}()
+
+// Receive data from channel
+value := <-ch  // Receive value from channel
+```
+
+#### Types of channels
+
+```go
+// Unbuffered channel
+ch1 := make(chan int)
+
+// Buffered channel
+ch2 := make(chan int, 5)
+
+// Receive-only channel
+ch3 := make(<-chan int)
+
+// Send-only channel
+ch4 := make(chan<- int)
+```
+
+#### Channel Patterns
+
+
