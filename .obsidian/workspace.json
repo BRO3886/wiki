@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "interviews/System Design.md",
+                "file": "golang/Concurrency Patterns.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "System Design"
+              "title": "Concurrency Patterns"
             }
           },
           {
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "interviews/System Design.md",
+                "file": "golang/Concurrency Patterns.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for System Design"
+              "title": "Backlinks for Concurrency Patterns"
             }
           },
           {
@@ -177,13 +177,14 @@
   },
   "active": "dd718bb4e81b67cb",
   "lastOpenFiles": [
+    "interviews/System Design.md",
+    "golang/Concurrency Patterns.md",
     "golang",
     "self care/Skin and Scalp.md",
     "self care/condition_tracker.csv",
     "self care/main.go",
     "self care/tracker.py",
     "self care/Untitled.md",
-    "interviews/System Design.md",
     "self care",
     "dsa/binary search/balanced stone heaps/main.py",
     "dsa/binary search/balanced stone heaps",
@@ -191,7 +192,6 @@
     "pages/contents.md",
     "pages",
     "journals",
-    "logseq/custom.css",
     "interviews/DSA.md",
     "static/images/Pasted image 20250110162212.png",
     "Graphs.md",
