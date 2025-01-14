@@ -19,3 +19,22 @@ Concurrency in golang is handled through:
 - Channels (communication between goroutines)
 - Synchronization primitives (mutexes, wait groups)
 
+> Rob Pike famously said:
+> "Concurrency is about dealing with lots of things at once. Parallelism is about doing lots of things at once."
+
+### Goroutines
+
+```go
+func main() {
+    // Start a goroutine
+    go func() {
+        fmt.Println("Running in background")
+    }()
+    
+    // Main continues executing
+    fmt.Println("Main function")
+}
+```
+
+### Goroutine Leaks
+
