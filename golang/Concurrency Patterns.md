@@ -36,13 +36,13 @@ func main() {
 }
 ```
 
-### Goroutines vs Threads
+#### Goroutines vs Threads
 
 A goroutine is a lightweight, user-space thread managed by the Go runtime, while an OS thread is a kernel-space thread managed by the operating system. 
 
 The key differences are that goroutines are much smaller (starting at 2KB vs 1-2MB for threads) and are scheduled by Go's runtime scheduler rather than the OS scheduler, making them much cheaper to create and switch between compared to threads. Threads typically share memory and use locks while goroutines can also use channels for communication.
 
-### Goroutine Leaks
+#### Goroutine Leaks
 
 A goroutine leak occurs when you create a goroutine that cannot exit and continues to consume resources indefinitely. This is similar to a memory leak, but instead of memory, you're leaking goroutines.
 
@@ -72,6 +72,25 @@ func noLeak(ctx context.Context) {
 }
 ```
 
-### Race Conditions
+#### Race Conditions
 
-A race condition occurs when multiple goroutines are writing to the same resource - similar to what happens with multiple threads. To prevent race conditions, we 
+A race condition occurs when multiple goroutines are writing to the same resource - similar to what happens with multiple threads. To prevent race conditions, locks, or mutex locks are used in golang.
+
+```go
+// Bad - Race condition
+var counter int
+go func() { counter++ }()
+go func() { counter++ }()
+
+// Good - Using mutex
+var counter int
+var mu sync.Mutex
+go func() {
+    mu.Lock()
+    counter++
+    mu.Unlock()
+}()
+```
+
+### Channels
+
