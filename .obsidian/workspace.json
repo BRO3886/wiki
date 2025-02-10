@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e116df240f5e59fb",
+        "id": "3566a2eaa09de0d3",
         "type": "tabs",
         "children": [
           {
-            "id": "2c1b30c15332a1d1",
+            "id": "75ef79b5c52a7c6f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "interviews/4 day prep.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "4 day prep"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "interviews/4 day prep.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 4 day prep"
+              "title": "Backlinks"
             }
           },
           {
@@ -164,30 +159,34 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2c1b30c15332a1d1",
+  "active": "75ef79b5c52a7c6f",
   "lastOpenFiles": [
+    "dsa/queue/blocking queue/main.py",
+    "dsa/queue/blocking queue/main.go",
+    "dsa/queue/blocking queue/Question.md",
+    "dsa/queue/blocking queue",
+    "dsa/queue/Blocking queue/Untitled.md",
+    "dsa/queue/Blocking queue/Question.md",
+    "interviews/4 day prep.md",
+    "dsa/queue/Blocking queue",
+    "dsa/queue",
+    "env/lib/python3.13/site-packages/pip-25.0.1.dist-info/REQUESTED",
+    "env/lib/python3.13/site-packages/pip-25.0.1.dist-info/INSTALLER",
+    "env/bin/pip3.13",
+    "env/bin/pip3",
+    "env/bin/pip",
+    "env/lib/python3.13/site-packages/pip/_vendor/packaging/licenses/__pycache__/_spdx.cpython-313.pyc",
     "dsa/stack/README.md",
-    "dsa/stack/valid parenthesis/main.py",
-    "dsa/stack/valid parenthesis",
-    "dsa/stack/next greater element/main.py",
-    "dsa/stack/next greater element",
     "dsa/stack/maxstack/README.md",
-    "dsa/stack/maxstack",
-    "dsa/stack/validate parenthesis/main.py",
-    "dsa/stack/validate parenthesis",
     "journals/2025/02-February/2025-02-09-Sunday.md",
-    "dsa/stack",
     "templates/daily note.md",
     "journals/2025/02-February/2025-02-08-Saturday.md",
     "interviews/DSA.md",
     "interviews/prep 5 day.md",
-    "interviews/4 day prep.md",
     "journals/2025/02-February/2025-02-07-Friday.md",
     "tasks/settld.md",
     "journals/2025/02-February/2025-02-06-Thursday.md",
     "dsa/sliding window/sliding window max/notes.md",
-    "dsa/sliding window/sliding window max/main.py",
-    "dsa/sliding window/sliding window max",
     "journals/2025/02-February/2025-02-05-Wednesday.md",
     "Untitled.canvas",
     "tasks/daily.md",
@@ -199,9 +198,6 @@
     "golang/Interfaces.md",
     "golang/Resources.md",
     "Untitled.md",
-    "interviews/System Design.md",
-    "self care/Skin and Scalp.md",
-    "self care/Untitled.md",
     "static/images/Pasted image 20250110162212.png",
     "static/images/Pasted image 20250108160046.png",
     "static/images/Pasted image 20241228144953.png",
