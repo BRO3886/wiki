@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dsa/bfs/Shortest Path in Binary Matrix.md",
+                "file": "spirituality/Bhagwad Geeta Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shortest Path in Binary Matrix"
+              "title": "Bhagwad Geeta Notes"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dsa/bfs/Shortest Path in Binary Matrix.md",
+                "file": "spirituality/Bhagwad Geeta Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Shortest Path in Binary Matrix"
+              "title": "Backlinks for Bhagwad Geeta Notes"
             }
           },
           {
@@ -165,10 +165,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "75ef79b5c52a7c6f",
+  "active": "51097a858665115f",
   "lastOpenFiles": [
-    "dsa/dfs/Word Search.md",
+    "spirituality/README.md",
+    "spirituality/Bhagwad Geeta Notes.md",
+    "dsa/dfs/Find leaves of a binary tree.md",
     "dsa/bfs/Shortest Path in Binary Matrix.md",
+    "dsa/dfs/Word Search.md",
     "dsa/bfs/Number of Islands.md",
     "dsa/dfs",
     "dsa/bfs/Word Ladder.md",
@@ -200,10 +203,7 @@
     "tasks/settld.md",
     "journals/2025/02-February/2025-02-06-Thursday.md",
     "dsa/sliding window/sliding window max/notes.md",
-    "journals/2025/02-February/2025-02-05-Wednesday.md",
     "Untitled.canvas",
-    "tasks/daily.md",
-    "tasks/projects.md",
     "static/images/Pasted image 20250110162212.png",
     "static/images/Pasted image 20250108160046.png",
     "static/images/Pasted image 20241228144953.png",
