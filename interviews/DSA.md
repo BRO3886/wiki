@@ -128,3 +128,11 @@ ans = solution(
 
 print(ans)
 ```
+
+
+Problem Statement: Given an integer array arr of size N, sorted in ascending order (with distinct values) and a target value k. Now the array is rotated at some pivot point unknown to you. Find the index at which k is present and if k is not present return -1.
+
+
+Problem 2: 
+Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue. We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively. 
+You must solve this problem without using the library's sort function. 
